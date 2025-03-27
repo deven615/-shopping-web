@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircare Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1a237e, #64b5f6);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 50px 20px;
+            justify-content: center;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.1);
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #ff6200;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: pulse 1.5s infinite;
+        }
+        .buy-btn:hover {
+            background: #ff4500;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>Haircare Products</header>
+    <div class="container">
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1320934166/photo/cosmetic-skin-care-products-on-green-leaves.jpg?s=612x612&w=0&k=20&c=X4pwnTaBzXHDOGZlcdJdlKxmYd__61xboHVIiR5JMIk=" alt="Shampoo">
+            <h3>Shampoo</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1248194603/photo/vitamin-c-serum-and-orange-fruit.jpg?s=612x612&w=0&k=20&c=p6tCTvuQ3vKMpiDSr9LsTJrw7Sqv0xcz2JWJSqtEb4M=" alt="Conditioner">
+            <h3>Conditioner</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1333190180/photo/man-baldness-treatment-nature-hair-care-procedure-oil-drop-at-scalp-male-person-applying.jpg?s=2048x2048&w=is&k=20&c=BLAI8Qna66gjg200EgKcCeowayP6UfXuZkZsUyST_eM=" alt="Hair Serum">
+            <h3>Hair Serum</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1365387242/photo/dyeing-mens-hair-at-home.jpg?s=2048x2048&w=is&k=20&c=n379Z9GA-mNEy90IeZbcpRaXTYwJI9NdEm_kUPGFRrg=" alt="Hair Mask">
+            <h3>Hair Mask</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hairtreatment" alt="Hair Treatment">
+            <h3>Hair Treatment</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hairdryer" alt="Hair Dryer">
+            <h3>Hair Dryer</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hairbrush" alt="Hair Brush">
+            <h3>Hair Brush</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hairspray" alt="Hair Spray">
+            <h3>Hair Spray</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hairwax" alt="Hair Wax">
+            <h3>Hair Wax</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hairtowel" alt="Hair Towel">
+            <h3>Hair Towel</h3>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: support@shoppingtoearning.com</p>
+        <p>&copy; 2025 Shopping to Earning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

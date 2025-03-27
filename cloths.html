@@ -1,0 +1,137 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #022f18, #65e154);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 50px 20px;
+            justify-content: center;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s, opacity 0.5s;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeIn 0.5s forwards;
+        }
+        .product:nth-child(1) { animation-delay: 0.2s; }
+        .product:nth-child(2) { animation-delay: 0.4s; }
+        .product:nth-child(3) { animation-delay: 0.6s; }
+        .product:nth-child(4) { animation-delay: 0.8s; }
+        .product:nth-child(5) { animation-delay: 1s; }
+        .product:nth-child(6) { animation-delay: 1.2s; }
+        .product:nth-child(7) { animation-delay: 1.4s; }
+        .product:nth-child(8) { animation-delay: 1.6s; }
+        .product:nth-child(9) { animation-delay: 1.8s; }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.8); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #ff6200;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buy-btn:hover {
+            background: #ff4500;
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>Clothes Collection</header>
+    <div class="container">
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1157742560/vector/all-that-jazz-lettering-slogan-retro-sketch-style-musical-instruments-saxophone-trumpet.jpg?s=612x612&w=0&k=20&c=oKbucOoB7AfGhejK0PivLy116JCIjvubBZcuou30j14=" alt="T-Shirt">
+            <h4>T-Shirt</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/527236518/photo/mans-legs.jpg?s=612x612&w=0&k=20&c=lczyG0ZkWelpn_o-I_VpjAMo_sA3WpdWHMlgZjCSE-k=" alt="Jeans">
+            <h4>Jeans</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1404654875/photo/various-vintage-jackets-on-clothing-rack-in-second-hand-store.jpg?s=612x612&w=0&k=20&c=hxOxh89pkKR1vy9JHcnaXIw7SB73dvuz0cWrxpGsczs=" alt="Jacket">
+            <h4>Jacket</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/637756712/photo/woman-enjoying-morning-coffee.jpg?s=612x612&w=0&k=20&c=m_ZzlL6XJxfytdE6giCUJeTKaWE4tVGjoCRAEfIECNc=" alt="Sweater">
+            <h4>Sweater</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/523113015/photo/mens-brown-shoes.jpg?s=612x612&w=0&k=20&c=3DL6Hz1Is_XaARpwTopjL_uVJFeXu0BWePYM0WT9GW0=" alt="Shoes">
+            <h4>Shoes</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/155601795/photo/mannequin-at-fashion-store.jpg?s=612x612&w=0&k=20&c=8Fo1ujKTBMEOgIdfJmkdo-pqtM1U2fP7147fjFylZCg=" alt="Shorts">
+            <h4>Shorts</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/482883419/photo/male-with-blank-black-hoodie.jpg?s=612x612&w=0&k=20&c=ToWPjU4dXoBHO2VEbYQ2IYbTWG8hgkt4uoJNnSgWJG4=" alt="Hoodie">
+            <h4>Hoodie</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/462581979/photo/beautiful-woman-with-hat.jpg?s=612x612&w=0&k=20&c=5z105_6spSvnLdRMigfTHK47-5PyB4S-_Y6ja7kZ9wM=" alt="Hat">
+            <h4>Hat</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/658912662/photo/handsome-dude.jpg?s=612x612&w=0&k=20&c=XYv3P84G2yl48KpKI7w98TBISJ4YuyELCG0cfCXis30=" alt="Scarf">
+            <h4>Scarf</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: support@shoppingtoearning.com</p>
+        <p>&copy; 2025 Shopping to Earning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

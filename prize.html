@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prize Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #9f9e9c, #0d0d0d);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(to right, #e2f207, #e98c8c);
+            color: white;
+        }
+        .container {
+            padding: 50px 20px;
+        }
+        .category {
+            margin: 30px 0;
+        }
+        .category h2 {
+            font-size: 26px;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        .prize-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .prize-box {
+            width: 250px;
+            height: 150px;
+            background: white;
+            color: black;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s, background 0.5s;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s forwards;
+        }
+        .prize-box:hover {
+            background: #FF5733;
+            color: white;
+            transform: scale(1.1);
+        }
+        .prize-box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>Prize Details</header>
+    <div class="container">
+        <div class="category">
+            <h2>Vegetable Wastage Prizes 🥦🍅</h2>
+            <div class="prize-boxes">
+                <div class="prize-box" style="animation-delay: 0.2s;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3448/3448843.png" alt="Compost">
+                    <p>Free Organic Compost</p>
+                </div>
+                <div class="prize-box" style="animation-delay: 0.4s;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2335/2335371.png" alt="Discount">
+                    <p>10% Discount on Fresh Veggies</p>
+                </div>
+                <div class="prize-box" style="animation-delay: 0.6s;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3082/3082021.png" alt="Seeds">
+                    <p>Free Seeds for Home Garden</p>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Plastic Wastage Prizes 🛍️♻️</h2>
+            <div class="prize-boxes">
+                <div class="prize-box" style="animation-delay: 0.8s;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/685/685655.png" alt="Cash Reward">
+                    <p>₹50 Cashback for 1kg Plastic</p>
+                </div>
+                <div class="prize-box" style="animation-delay: 1s;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1040/1040251.png" alt="Eco Bag">
+                    <p>Free Eco-friendly Bag</p>
+                </div>
+                <div class="prize-box" style="animation-delay: 1.2s;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2453/2453199.png" alt="Tree Plantation">
+                    <p>Tree Plantation Reward</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

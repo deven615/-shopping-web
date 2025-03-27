@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #022f18, #65e154);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 50px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .category {
+            width: 250px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        .category:hover {
+            transform: scale(1.1);
+        }
+        .category img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .shop-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #ff6200;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: pulse 1.5s infinite;
+        }
+        .shop-btn:hover {
+            background: #ff4500;
+            transform: scale(1.1);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>Choose Your Category</header>
+    <div class="container">
+        <div class="category">
+            <img src="https://media.istockphoto.com/id/1496614896/photo/smiling-mixed-race-young-woman-applying-moisturizer-on-her-face-in-bathroom.jpg?s=612x612&w=0&k=20&c=DdbqA5fEhFJ6J2sdLKW30X5lct1LCZ-Hc0u455kMSTE=" alt="Skincare">
+            <h3>Skincare</h3>
+           <a href="skin.html"> <button  class="shop-btn">Shop Now</button></a>
+        </div>
+        <div class="category">
+            <img src="https://media.istockphoto.com/id/1301327647/photo/young-woman-applying-oil-in-hair-care-concept-stock-photo.jpg?s=2048x2048&w=is&k=20&c=iAfDtf97suqBAxTYZ9VFy7wvGric9B_nRHDAgnM7J5c=" alt="Haircare">
+            <h3>Haircare</h3>
+            <a href="hair.html"><button class="shop-btn">Shop Now</button></a>
+        </div>
+        <div class="category">
+            <img src="https://media.istockphoto.com/id/1041286698/photo/row-of-mens-shirts-in-blue-colors-on-hanger.jpg?s=2048x2048&w=is&k=20&c=k4y9QInou9OkRd047KlJu0o6i0x25ghOaWSCqvHHrUo=" alt="Clothes"></a>
+            <h3>Clothes</h3>
+            <a href="cloths.html"><button class="shop-btn">Shop Now</button></a>
+        </div>
+        <div class="category">
+            <img src="https://media.istockphoto.com/id/1170073824/photo/gamer-work-space-concept-top-view-a-gaming-gear-mouse-keyboard-joystick-headset-mobile.jpg?s=2048x2048&w=is&k=20&c=5ReZtDpPqKr8aClPvFdeNTy6xQw-4MY4pYGX1d4_YN4=" alt="Accessories">
+            <h3>Accessories</h3>
+            <a href="acces.html"><button class="shop-btn">Shop Now</button></a>
+        </div>
+        <div class="category">
+            <img src="https://media.istockphoto.com/id/506998184/photo/woman-chooses-the-laptop.jpg?s=2048x2048&w=is&k=20&c=Erp7QzOm1nUxivu37eBq_VlL6qyKXszCMA0YKl_eT2Y=" alt="Electronics">
+            <h3>Electronics</h3>
+            <a href="elc.html"><button class="shop-btn">Shop Now</button></a>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: support@shoppingtoearning.com</p>
+        <p>&copy; 2025 Shopping to Earning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f5f5dc, #f4a261);
+            color: black;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            background: #d4a373;
+            color: white;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .product {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #ff6200;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            animation: pulse 1.5s infinite;
+        }
+        .buy-btn:hover {
+            background: #ff4500;
+            transform: scale(1.1);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>Natural Skincare Products</header>
+    <div class="container">
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1215011574/photo/aloe-vera-gel-close-up-sliced-aloe-vera-plants-leaf-and-gel-with-wooden-spoon.jpg?s=2048x2048&w=is&k=20&c=VKvwavLx7ZslfepcBFQNaUicWBcR0DgMVTcrUU5Z3Hc=" alt="Aloe Vera Gel">
+            <h4>Aloe Vera Gel</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1222635811/photo/young-smiling-male-feeling-happy-about-regular-beauty-routine-applying-face-cream-on-cheeks.jpg?s=612x612&w=0&k=20&c=mVKmO3p3g5eaLk7rFhwuZIqi2dXzeoAQjAyaQqnpJlc=" alt="Organic Face Cream">
+            <h4>Organic Face Cream</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1338077590/photo/coconut-oil.jpg?s=2048x2048&w=is&k=20&c=CnbI9WHRH_cMaflqPFM69NpR2_i6_cxnTXqtgGtJIvE=" alt="Coconut Oil">
+            <h4>Pure Coconut Oil</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/538184814/photo/maple-syrup-in-glass-bottle-on-wooden-table.jpg?s=2048x2048&w=is&k=20&c=HNrT1-cgBMiitPzOG9CI-LQh_zGvDEoqKAQ6BEPS59w=" alt="Honey Face Mask">
+            <h4>Honey Face Mask</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1369436677/photo/bottles-of-male-and-female-perfume-red-roses-decorative-hearts-on-the-satin-fabric-background.jpg?s=2048x2048&w=is&k=20&c=Ros0ENkZp82MOAs-fWo4__kI8zrR47mMVc_WlbqxgDY=" alt="Rose Water Toner">
+            <h4>Rose Water Toner</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1335399967/photo/moringa-oleifera-powder-and-pills-on-rustic-table.jpg?s=2048x2048&w=is&k=20&c=Y0fGDjxS4yhp63aOAz1gPHm72h5HYG0jy7ZPZPt7A_I=" alt="Green Tea Moisturizer">
+            <h4>Green Tea Moisturizer</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://media.istockphoto.com/id/1178517697/photo/raw-activated-charcoal-powder-in-wooden-cup-and-natural-bamboo-toothbrush-next-to-it-green.jpg?s=2048x2048&w=is&k=20&c=cEJIotv47NqdkdcayXADrjxUZkZ0vezc1cpyZ_5VeYE=" alt="Charcoal Face Wash">
+            <h4>Charcoal Face Wash</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/150x150/?lavender" alt="Lavender Essential Oil">
+            <h4>Lavender Essential Oil</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/150x150/?shea-butter" alt="Shea Butter Lotion">
+            <h4>Shea Butter Lotion</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/150x150/?avocado" alt="Avocado Face Scrub">
+            <h4>Avocado Face Scrub</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>

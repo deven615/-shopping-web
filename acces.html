@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 50px 20px;
+            justify-content: center;
+        }
+        .product {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s, opacity 0.5s;
+            text-align: center;
+            transform: rotateY(180deg);
+            animation: flipIn 0.8s forwards;
+        }
+        @keyframes flipIn {
+            from { transform: rotateY(180deg); opacity: 0; }
+            to { transform: rotateY(0); opacity: 1; }
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background: #ff6200;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .buy-btn:hover {
+            background: #ff4500;
+            transform: scale(1.1);
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>Accessories Collection</header>
+    <div class="container">
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?watch" alt="Watch">
+            <h4>Watch</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?sunglasses" alt="Sunglasses">
+            <h4>Sunglasses</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?earrings" alt="Earrings">
+            <h4>Earrings</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?necklace" alt="Necklace">
+            <h4>Necklace</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?bracelet" alt="Bracelet">
+            <h4>Bracelet</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?ring" alt="Ring">
+            <h4>Ring</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?handbag" alt="Handbag">
+            <h4>Handbag</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?belt" alt="Belt">
+            <h4>Belt</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="https://source.unsplash.com/100x100/?hat" alt="Hat">
+            <h4>Hat</h4>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us: support@shoppingtoearning.com</p>
+        <p>&copy; 2025 Shopping to Earning. All rights reserved.</p>
+    </footer>
+</body>
+</html>

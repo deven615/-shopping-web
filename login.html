@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            transition: background 1s ease-in-out;
+        }
+        .teddy {
+            font-size: 80px;
+            animation: bounce 2s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+        .login-btn {
+            background: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .login-btn:hover {
+            transform: scale(1.1);
+        }
+        .login-form {
+            position: fixed;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            color: black;
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: bottom 0.5s ease-in-out;
+        }
+        .form-field {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-field input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            background: #2575fc;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="teddy">🐻</div>
+    <button class="login-btn" onclick="showLoginForm()">Login</button>
+    
+    <div class="login-form" id="loginForm">
+        <h2>Login</h2>
+        <div class="form-field">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="form-field">
+            <label>Place</label>
+            <input type="text" placeholder="Enter your place">
+        </div>
+        <div class="form-field">
+            <label>Phone Number</label>
+            <input type="text" placeholder="Enter your phone number">
+        </div>
+        <div class="form-field">
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age">
+        </div>
+        <div class="form-field">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+        <div class="form-field">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+        </div>
+        <div class="form-field">
+            <label>City</label>
+            <input type="text" placeholder="Enter your city">
+        </div>
+        <div class="form-field">
+            <label>Country</label>
+            <input type="text" placeholder="Enter your country">
+        </div>
+        <a href="prize.html"><button class="submit-btn">Submit</button></a>
+    </div>
+
+    <script>
+        function showLoginForm() {
+            document.getElementById("loginForm").style.bottom = "20%";
+        }
+    </script>
+</body>
+</html>
